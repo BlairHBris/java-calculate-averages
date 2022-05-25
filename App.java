@@ -22,10 +22,11 @@ class App {
   private static void median(double[] numericArray) {
     Arrays.sort(numericArray);
     double median;
-    if (numericArray.length % 2 == 0)
+    if (numericArray.length % 2 == 0) {
       median = ((double) numericArray[numericArray.length / 2] + (double) numericArray[numericArray.length / 2 - 1]) / 2;
-    else
+    } else {
       median = (double) numericArray[numericArray.length / 2];
+    }
     System.out.println("The mean is " + median);
   }
 
